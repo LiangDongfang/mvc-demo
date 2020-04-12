@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+ul,ol{
+  list-style: none;
+}
+
+
+
+body > #page{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body > #page > section{
+  border: 2px solid gray;
+  width: 50vw;
+  height: 50vh;
+}
+#app1 {
+}
+
+#app1 .output{}
+#app1 .actions{}
+#app2{
+}
+#app2 > #tab-bar{
+  display: flex; 
+}
+
+#app2 > #tab-bar > li{
+  border: 3px solid black;
+  width: 50%;
+}
+
+#app2 > #tab-bar > li.selected{
+  background-color: cornflowerblue;
+}
+
+
+#app2 > #tab-content{
+}
+
+#app2 > #tab-content >li{
+  display: none;
+}
+
+#app2 > #tab-content > li.active{
+  display: block;
+}
+#app3{}
+
+#app3 .square{
+  border: 1px solid red;
+  width: 15vw;
+  height: 15vw;
+  margin-top: 10vw;
+  margin-left: 10vw;
+  transition: all 0.8s;
+}
+
+#app3 .square.active{
+  transform: translateX(20vw);
+}
+#app4{}
+
+@keyframes change{
+  0%{
+    background: red;
+  }
+  100% {
+    background: blue;
+  }
+}
+#app4 .circle{
+  border: 1px solid green;
+  width: 25vw;
+  height: 25vw;
+  border-radius: 50%;
+
+}
+
+#app4 .circle.active{
+  animation: change 1s infinite alternate linear;
+}
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */
